@@ -20,12 +20,14 @@ listGallery.style.listStyle = "none";
 listGallery.style.padding = "0";
 listGallery.style.gap = "30px";
 
-const markup = images.map(
-  (value) => `
+const markup = images
+  .map(
+    (value) => `
   <li class= "item">
     <img src="${value.url}" alt="${value.alt}" width = '400' height = '267'>
   </li>
 `
-);
+  )
+  .join("");
 
 listGallery.insertAdjacentHTML("afterbegin", markup);
