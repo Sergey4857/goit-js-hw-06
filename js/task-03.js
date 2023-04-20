@@ -28,8 +28,4 @@ const markup = images.map(
 `
 );
 
-console.log(listGallery);
-
-listGallery.append(...markup);
-
-insert;
+listGallery.insertAdjacentHTML("afterbegin", markup);
